@@ -7,10 +7,6 @@
 # Muuntamista jatketaan siihen saakka, kunnes
 # käyttäjä syöttää negatiivisen gallonamäärän.
 
-
-
-
-
 def gallon():
     print("paljon on gallonmäärä?")
     return
