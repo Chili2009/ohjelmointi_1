@@ -6,21 +6,15 @@
 # Määritellään kukin vuodenaika kolmen kuukauden mittaiseksi siten,
 # että joulukuu on ensimmäinen talvikuukausi.
 
-kuukaudet = ("tammikuu", "helmikuu", "maaliskuu", "huhtikuu",
-             "toukokuu", "kesäkuu", "heinkäkuu", "elokuu", "syyskuu",
-             "lokakuu", "marraskuu", "joulukuu")
-userInput = int(input("Anna kuukauden numero: "))
 
-vuodenajat = kuukaudet[userInput-1]
+seasons = ("talvi", "talvi", "kevät", "kevät", "kevät", "kesä", "kesä", "kesä",
+           "syksy","syksy", "syksy", "talvi")
+month_num = int(input("Syötä kuukauden järjestysnumero (1-12): "))
 
-    talvi := (1, 2, 3)
-    kevät := (4, 5, 6)
-    kesä := (7, 8, 9)
-    syksy := (10, 11, 12)
-
-
-
-user = input("anna kuukauden numero: ")
+if month_num < 13 and month_num > 0:
+    print(f"{month_num}. Kuukausi kuuluu vuodenaikaan {seasons[month_num-1]}")
+else:
+    print("virheellinen syöte")
 
 
 

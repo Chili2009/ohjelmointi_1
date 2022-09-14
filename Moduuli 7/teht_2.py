@@ -7,7 +7,15 @@
 # yksi kerrallaan allekkain mielivaltaisessa järjestyksessä.
 # Käytä joukkotietorakennetta nimien tallentamiseen.
 
-user = ("Anna nimi")
+nimet = set()
+nimi =input("Anna nimi: ")
+while nimi != "":
+    if nimi in nimet:
+        print("Aiemmin syötetty nimi: ")
+        nimi = input("Anna uusi nimi: ")
+    else:
+        nimet.add(nimi)
+        print("uusi nimi")
+        nimi = input("Anna uusi nimi: ")
 
-if= print("uusi nimi")
-    else("Aiemmin syötetty nimi")
+for i in nimet:
