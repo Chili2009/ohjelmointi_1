@@ -6,17 +6,17 @@ yhteys = mysql.connector.connect(
          database='flight_game',
          user='root',
          password='1234',
-         autocommit=True
+         autocommit=True)
 
-#määritellään kysely         )
-sql = "SELECT name, continent FROM country WHERE iso_country = '" + icao + "'"
-print(sql)
+#määritellään kysely
+#sql = "SELECT name, continent FROM country WHERE iso_country = '" + icao + "'"
+#print(sql)
 
 #suoritetaan kysely
-kursori = yhteys.cursor()
-kursori.execute(sql)
+#kursori = yhteys.cursor()
+##kursori.execute(sql)
 
 #haetaan ja käsitellään tulosrivit
-tulos = kursori.fetchall()
-for rivi in tulos:
-    print(f"{rivi[0]}, {rivi[1]}")
+#tulos = kursori.fetchall()
+#for rivi in tulos:
+    #print(f"{rivi[0]}, {rivi[1]}")
