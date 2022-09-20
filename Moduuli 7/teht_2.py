@@ -19,3 +19,4 @@ while nimi != "":
         nimi = input("Anna uusi nimi: ")
 
 for i in nimet:
+    print(i)

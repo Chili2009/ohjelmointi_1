@@ -41,7 +41,7 @@ def lisaauusi(aseemat):
 
 
 #tulostaa halutun aseman annetusta sanakirjasta
-def hae(asemat):...
+def hae(asemat):
 
 #pääohjelma
 lentoasemat = {}
