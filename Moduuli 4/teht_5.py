@@ -15,7 +15,7 @@ while i < 5:
     else:
         print("Pääsy evätty")
         i += 1
-        yritys = input(f"Syötä Käyttäjätunnus: ")
+        yritys = input("Syötä Käyttäjätunnus: ")
         yritys2 = input("Syötä Salasana: ")
 if i == 5:
     print("Pääsy evätty")
